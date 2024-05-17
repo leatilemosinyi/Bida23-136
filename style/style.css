@@ -1,1 +1,222 @@
+* {
+    padding: 0%;
+    margin: 0%;              /* It sets padding, margin, and box-sizing to ensure consistent layout behavior across different browsers.*/
+    box-sizing: border-box;
+    
+}
 
+
+.body {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.section-padding{
+
+  padding: 100px 0;           
+
+}
+
+.carousel-caption {
+  bottom: 220px;
+    z-index: 2;
+    
+   }
+  
+.sliderbtn{
+  padding: 50px;   
+  
+}
+
+
+
+ .carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px; /* adjusting margin for smaller screens */
+  padding: 80px; /* creates space between the text content and the edges of container */
+}
+
+.carousel-caption p {
+  width: 60%; /* Adjusted width for smaller screens */
+  margin: auto;
+  font-size: 14px; 
+  line-height: 1.6; 
+  padding: 20px; /* Reduced padding for smaller screens */
+}
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.7;
+
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 25px; /* Further reduced font size for smaller screens */
+    padding: 30px; /* Further reduced padding for smaller screens */
+  }
+
+  .carousel-caption p {
+    font-size: 12px; /* Further reduced font size for smaller screens */
+    padding: 5px; /* Further reduced padding for smaller screens */
+  }
+}
+
+ 
+
+
+
+
+.navbar-nav {
+   margin-left: auto;
+   
+    
+}
+
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 30px; /* Spacing between movie cards */
+ 
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+
+.movie-card:hover .movie-details {
+  opacity: 1;
+}
+
+
+@media (max-width: 992px) {
+  .movie-card {
+    width: calc(50% - 30px); /* Adjust the width for medium screens to display two cards per row */
+  }
+}
+
+/* Adjustments for extra small screens */
+@media (max-width: 576px) {
+  .movie-card {
+    width: calc(50% - 30px); /* Adjust the width for extra small screens to display two cards per row */
+  }
+}
+
+
+
+.navbar {
+  background-color: black; /* Set the background color to black */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; 
+}
+
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 56px); /* Adjust for the height of the navbar */
+}
+
+
+iframe {
+  width: 100%;         /* Make the embedded video cover the whole page */
+  height: 100%;
+}
+
+
+
+.social-icons {
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the space between icons */
+  font-size: 24px; /* Adjust the icon size */
+  color: #333; /* Adjust the icon color */
+}
+
+footer {
+  background-color: white;
+  color: black;
+  padding: 10px 0;
+  margin-top: 200px; /*to set footer at the buttom*/
+}
+
+
+
+.social-icons a {
+  color: black;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+  .container {
+   
+    margin: 0 auto;
+  
+    margin-top: 100px;
+   
+}
+
+.navbar-toggler {
+  color: white; /* Set the color of the toggler button to white */
+  border-color: white; /* Set the border color of the toggler button to white */
+}
